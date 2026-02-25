@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0d0d0d;
+    color: #ffffff;
+}
+
+/* NAVBAR */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+    padding: 16px 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00c896;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+nav ul a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s;
+}
+
+nav ul a:hover {
+    color: #00c896;
+}
+
+/* HERO */
+#home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    background: linear-gradient(to bottom, #0d0d0d, #111827);
+}
+
+#home h1 {
+    font-size: 3rem;
+    margin-bottom: 16px;
+}
+
+#home p {
+    font-size: 1.2rem;
+    color: #aaaaaa;
+    margin-bottom: 32px;
+}
+
+.btn {
+    background-color: #00c896;
+    color: #000000;
+    padding: 14px 32px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #00a87e;
+}
+
+/* SEÇÕES */
+section {
+    padding: 100px 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 24px;
+    color: #00c896;
+}
+
+/* SOBRE */
+#sobre {
+    background-color: #111827;
+}
+
+#sobre p {
+    font-size: 1.1rem;
+    color: #aaaaaa;
+    line-height: 1.8;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* REGRAS */
+#regras {
+    background-color: #0d0d0d;
+}
+
+.regras-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.regra-card {
+    background-color: #1a1a2e;
+    border: 1px solid #00c89633;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: left;
+}
+
+.regra-card span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #00c896;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.regra-card p {
+    color: #aaaaaa;
+    line-height: 1.6;
+}
+
+/* STAFF */
+#staff {
+    background-color: #111827;
+}
+
+.staff-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.staff-card {
+    background-color: #1a1a2e;
+    border: 1px solid #00c89633;
+    border-radius: 12px;
+    padding: 32px 24px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.staff-card:hover {
+    transform: translateY(-6px);
+}
+
+.avatar {
+    font-size: 3rem;
+    margin-bottom: 16px;
+}
+
+.staff-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+}
+
+.staff-card p {
+    color: #00c896;
+    font-size: 0.9rem;
+}
+
+/* FOOTER */
+footer {
+    background-color: #0d0d0d;
+    text-align: center;
+    padding: 24px;
+    color: #555555;
+    font-size: 0.9rem;
+    border-top: 1px solid #1a1a2e;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        gap: 16px;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+}
